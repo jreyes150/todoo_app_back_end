@@ -1,0 +1,28 @@
+
+<head><link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+ <nav>
+    	<img src="" class="logo">
+</nav>
+<h1>Artistic Paintings</h1>
+<ul class="card">
+<% @todos.each do |todo| %>
+  <li>
+    <input type="checkbox" name=""/>
+   <a href="/todo/show/<%= todo.id %>"><%= todo.description %></a>
+    <span class="pomodoro-estimate small-pomodoro-estimate"><%= todo.pomodoro_estimate %></span>
+  </li>
+<% end %>
+</ul>
+<div id="new-todo-block">
+<a href="/todo/new" class="button add-new-todo-button" id="add-new-todo-button">Add a todo</a>
+</div>
+
+<ul class="flex-container"></il>
+   <li class="flex-item"><a href="https://www.healthline.com/nutrition/16-ways-relieve-stress-anxiety">Reduce Stress</a></li>
+  <li class="flex-item"><a href="http://www.keepinspiring.me/20-ways-to-organize-your-life-now/">Get Organized</a></li>
+  <li class="flex-item"><a href="https://www.success.com/article/rohn-13-ways-to-improve-your-life">Improve</a></li>
+      </ul>
