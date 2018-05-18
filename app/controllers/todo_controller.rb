@@ -7,11 +7,6 @@ def show
   @todo = Todo.find_by_id(params[:id])
 end
 
-def newcps.edu
-  ps45358909
-  
-end
-
 def create
   t = Todo.new
   t.description = params['description']
@@ -37,4 +32,4 @@ def destroy
   t.destroy
   redirect_to "/"
 end
-ends
+end 
